@@ -21,9 +21,7 @@ class CreateFacilityUnitsTable extends Migration
             $table->boolean('active');
             $table->timestamps();
     });
-            Schema::table('facility_units', function($table) {
-    $table->foreign('facilities_id')->references('id')->on('facilities');
-});
+            
     }
 
     /**
