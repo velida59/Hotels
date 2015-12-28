@@ -34,6 +34,7 @@ Route::controllers([
    'password' => 'Auth\PasswordController',
 ]);
 
+Route::get('home', 'HomeController@index');
 // route to show the login form
 Route::get('login', array('uses' => 'HomeController@showLogin'));
 
