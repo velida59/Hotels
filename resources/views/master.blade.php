@@ -26,7 +26,6 @@
                         </div>
                     @endif
 
-=======
     <title>Laraveltutz CRUD app</title>
   
 </head>
@@ -47,13 +46,11 @@
     </div>
   </div>
 </nav>
-<<<<<<< HEAD
 
-=======
  
     
 <div class="container">
->>>>>>> origin/master
+
  
 @yield('content')   
  
@@ -68,8 +65,7 @@
      
  
 </body>
-<<<<<<< HEAD
-=======
+
 @if(Session::has('flash_message'))
     <div class="alert alert-success">
         {{ Session::get('flash_message') }}
@@ -86,5 +82,5 @@
                             </ul>
                         </div>
                     @endif
->>>>>>> origin/master
+
 </html>

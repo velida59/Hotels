@@ -75,60 +75,65 @@
                 </div>
        <div>
        <div class="btn-lg">
-	<button 
-         type="button" 
+           <FORM METHOD="LINK" ACTION="/home">
+         <INPUT type="submit" VALUE="Hotel Ping"
          style="background-color:#FFDEAD;
-                color:#FFDEAD; 
+                color:#000000; 
                 padding:10px;
                 border-radius: 10px;
                 border: 3px solid #CD853F"
                 
                 >
-            
-		<li><a href="{{ url('/home') }}">HOTEL PING</a></li>
-	</button>
+          
+		
+	</FORM>
     </div>
         
         
         <div class="btn-lg">
-	<button 
-         type="button" 
-         style="background-color:#FFDEAD; 
-                color:#FFDEAD; 
-                padding:10px;
-                border-radius: 10px;
-                border: 3px solid #CD853F">
-		<li><a href="{{ url('/home') }}">HOTEL SARAJEVO</a></li>
-	</button>
-    </div> 
-    
-    <div class="btn-lg">
-	<button 
-         type="button" 
-         style="background-color:#FFDEAD; 
-                color:#FFDEAD; 
-                padding:10px;
-                border-radius: 10px;
-                border: 3px solid #CD853F">
-		<li><a href="{{ url('/home') }}">HOTEL BOSNA</a></li>
-	</button>
-    </div>
-                
-    <div class="btn-lg">
-	<button 
-         type="button" 
-         style="background-color:#FFDEAD; 
-                color:#FFDEAD; 
+	    <FORM METHOD="LINK" ACTION="/home">
+         <INPUT type="submit" VALUE="Hotel Sarajevo"
+         style="background-color:#FFDEAD;
+                color:#000000; 
                 padding:10px;
                 border-radius: 10px;
                 border: 3px solid #CD853F"
+                
                 >
-		<li><a href="{{ url('/home') }}">HOTEL IUS</a></li>
-	</button>
+          
+		
+	</FORM>
+    </div> 
+    
+    <div class="btn-lg">
+	    <FORM METHOD="LINK" ACTION="/home">
+         <INPUT type="submit" VALUE="Hotel Bosna"
+         style="background-color:#FFDEAD;
+                color:#000000; 
+                padding:10px;
+                border-radius: 10px;
+                border: 3px solid #CD853F"
+                
+                >
+          
+		
+	</FORM>
+    </div>
+                
+    <div class="btn-lg">
+	    <FORM METHOD="LINK" ACTION="/home">
+         <INPUT type="submit" VALUE="Hotel IUS"
+         style="background-color:#FFDEAD;
+                color:#000000; 
+                padding:10px;
+                border-radius: 10px;
+                border: 3px solid #CD853F"
+                
+                >
+          
+		
+	</FORM>
     </div>            
     </body>
 </html>
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master

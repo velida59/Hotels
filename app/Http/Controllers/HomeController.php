@@ -76,8 +76,8 @@ if ($validator->fails()) {
 }  
     
  
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> origin/master
+
+
+

@@ -64,9 +64,9 @@
 </div>
 </div>
 
-<<<<<<< HEAD
+
 @endsection
 
-=======
+
 @endsection
->>>>>>> origin/master
+
