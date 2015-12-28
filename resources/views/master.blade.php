@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
     <title>Booking</title>
   
 </head>
@@ -25,6 +26,12 @@
                         </div>
                     @endif
 
+=======
+    <title>Laraveltutz CRUD app</title>
+  
+</head>
+<body>
+>>>>>>> origin/master
  
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -40,7 +47,13 @@
     </div>
   </div>
 </nav>
+<<<<<<< HEAD
 
+=======
+ 
+    
+<div class="container">
+>>>>>>> origin/master
  
 @yield('content')   
  
@@ -55,4 +68,23 @@
      
  
 </body>
+<<<<<<< HEAD
+=======
+@if(Session::has('flash_message'))
+    <div class="alert alert-success">
+        {{ Session::get('flash_message') }}
+    </div>
+@endif
+ 
+@if (count($errors) > 0)
+                        <div class="alert alert-danger">
+                            <strong>Whoops!</strong> There were some problems with your input.<br><br>
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+>>>>>>> origin/master
 </html>

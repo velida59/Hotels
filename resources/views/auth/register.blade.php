@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 @extends('master')
 
 @section('content')
@@ -66,6 +69,7 @@
 </div>
 </div>
 
+<<<<<<< HEAD
 @endsection
 
 
@@ -77,3 +81,6 @@
  * and open the template in the editor.
  */
 
+=======
+@endsection
+>>>>>>> origin/master

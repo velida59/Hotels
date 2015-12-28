@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hotels</title>
+        <title>Laravel</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -38,8 +38,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">This hotel is located in very quiet environment.</div>
-               
+                <div class="title">Amer je legenda 5</div>
             </div>
         </div>
     </body>
