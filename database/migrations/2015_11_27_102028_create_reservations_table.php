@@ -22,6 +22,15 @@ class CreateReservationsTable extends Migration
             $table->timestamps();
     });
 
+Schema::table('reservations', function($table) {
+    $table->foreign('facility_unit_id')->references('id')->on('facility_units');
+});
+Schema::table('reservations', function($table) {
+    $table->foreign('users_id')->references('id')->on('users');
+});
+
+
+
 
     }
     public function down()
