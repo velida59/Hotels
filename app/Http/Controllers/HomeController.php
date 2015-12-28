@@ -2,21 +2,33 @@
 
 namespace App\Http\Controllers;
 
+use View;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
-abstract class Controller extends BaseController
+class HomeController extends BaseController
 {
+       use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+       
+       
+    protected $layout = 'master';
+
+    public function index(){
+
+        return View::make('home');
+
+    }
     public function showLogin()
 {
     // show the form
     return View::make('login');
 }
 
+
 public function doLogin()
-{
+{ 
 // validate the info, create rules for the inputs
 $rules = array(
     'email'    => 'required|email', // make sure the email is an actual email
@@ -63,5 +75,5 @@ if ($validator->fails()) {
     return Redirect::to('login'); // redirect the user to the login screen
 }  
     
-    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+ 
 }
