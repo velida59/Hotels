@@ -36,7 +36,7 @@
                 font-family: 'Commercial Script BT', arial;
                 font-size: 50px;
                 text-shadow: 2px 2px 2px #aaa;
-                color: #CD853F;
+                color: #000000;
 
             }
             
@@ -75,7 +75,7 @@
                 </div>
        <div>
        <div class="btn-lg">
-           <FORM METHOD="LINK" ACTION="/home">
+           <FORM METHOD="LINK" ACTION="/facilities">
          <INPUT type="submit" VALUE="Hotel Ping"
          style="background-color:#FFDEAD;
                 color:#000000; 
@@ -88,6 +88,8 @@
 		
 	</FORM>
     </div>
+           
+
         
         
         <div class="btn-lg">

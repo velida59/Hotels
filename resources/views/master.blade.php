@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
+
     <title>Booking</title>
   
 </head>
@@ -29,9 +29,7 @@
     <title>Laraveltutz CRUD app</title>
   
 </head>
-<body>
->>>>>>> origin/master
- 
+<body> 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">

@@ -16,7 +16,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('facilities', function() {
-    return view('facilities')->with('description', 'Description');
+    return view('hotelping')->with('description', 'Description');
 });
 Route::get('facilityunits', function() {
     return view('facilityunits')->with('type', 'Type');
