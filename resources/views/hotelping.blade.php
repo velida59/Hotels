@@ -156,9 +156,9 @@ populatedropdown("daydropdown", "monthdropdown", "yeardropdown")
             
            <option value="" disabled="disabled" selected="selected">Please select</option>
 
- <option value="Milk">Fresh Milk</option>
- <option value="Cheese">Old Cheese</option>
- <option value="Bread">Hot Bread</option>
+ <option value="RoomType">Single Bed</option>
+ <option value="RoomType">Double Bed</option>
+ <option value="RoomType">Three Beds</option>
  </select>
  </div>
          
