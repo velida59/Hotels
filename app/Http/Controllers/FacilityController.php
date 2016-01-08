@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Facility;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -16,7 +16,9 @@ class FacilityController extends Controller
      */
     public function index()
     {
-        //
+        $allFacilities = Facility::all();
+       
+        return view('home')->with('facilities',$allFacilities);
     }
 
     /**
@@ -37,7 +39,7 @@ class FacilityController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //$datum_dolaska = new Date($request['daydropdown_checkin'];
     }
 
     /**
@@ -48,7 +50,8 @@ class FacilityController extends Controller
      */
     public function show($id)
     {
-        //
+        $facility = Facility::find($id);
+        return view('facility')->with('facility', $facility);
     }
 
     /**

@@ -54,88 +54,29 @@
 
             .title {
                 font-size: 40px;
+                text-align: center
             }
             
 
         </style>
     </head>
     <body>
-    
-       
-        
-        <div class="container">
-        <div class="content">
-            
-  <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-  </div>
-  </div>
+      
     <div class="title" 
-         style="color: black";> Choose your place to stay and live the great experience!
-                </div>
-       <div>
+         style="color: black"> Choose your place to stay and live the great experience!
+     </div
+     <br><br>
        <div class="btn-lg">
-           <FORM METHOD="LINK" ACTION="/facilities">
-         <INPUT type="submit" VALUE="Hotel Ping"
+          @foreach($facilities as $facility)
+         <a href="facility/{{$facility->id}}" type="submit"
          style="background-color:#FFDEAD;
                 color:#000000; 
                 padding:10px;
                 border-radius: 10px;
-                border: 3px solid #CD853F"
-                
-                >
-          
-		
-	</FORM>
+                border: 3px solid #CD853F">{{$facility->name}}</a>
+          @endforeach
     </div>
            
-
-        
-        
-        <div class="btn-lg">
-	    <FORM METHOD="LINK" ACTION="/home">
-         <INPUT type="submit" VALUE="Hotel Sarajevo"
-         style="background-color:#FFDEAD;
-                color:#000000; 
-                padding:10px;
-                border-radius: 10px;
-                border: 3px solid #CD853F"
-                
-                >
-          
-		
-	</FORM>
-    </div> 
-    
-    <div class="btn-lg">
-	    <FORM METHOD="LINK" ACTION="/home">
-         <INPUT type="submit" VALUE="Hotel Bosna"
-         style="background-color:#FFDEAD;
-                color:#000000; 
-                padding:10px;
-                border-radius: 10px;
-                border: 3px solid #CD853F"
-                
-                >
-          
-		
-	</FORM>
-    </div>
-                
-    <div class="btn-lg">
-	    <FORM METHOD="LINK" ACTION="/home">
-         <INPUT type="submit" VALUE="Hotel IUS"
-         style="background-color:#FFDEAD;
-                color:#000000; 
-                padding:10px;
-                border-radius: 10px;
-                border: 3px solid #CD853F"
-                
-                >
-          
-		
-	</FORM>
-    </div>            
     </body>
 </html>
 

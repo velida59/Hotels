@@ -52,7 +52,8 @@ Route::controllers([
 
 
 
-Route::get('home', 'HomeController@index');
+Route::get('home', 'FacilityController@index');
+Route::get('facility/{$id}', 'FacilityController@show');
 // route to show the login form
 Route::get('login', array('uses' => 'HomeController@showLogin'));
 

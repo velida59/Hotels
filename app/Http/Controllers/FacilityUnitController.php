@@ -16,8 +16,14 @@ class FacilityUnitController extends Controller
      */
     public function index()
     {
-        //
+        $allFacility_Units = Facility_Units::all();
+       
+        return view('facility/{{$facility->id}}')->with('facility_units',$allFacility_Units);
+    
+       
     }
+        //
+    
 
     /**
      * Show the form for creating a new resource.
