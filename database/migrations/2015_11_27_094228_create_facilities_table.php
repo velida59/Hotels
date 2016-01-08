@@ -13,6 +13,7 @@ class CreateFacilitiesTable extends Migration
     public function up()
 { Schema::create('facilities', function(Blueprint $table) { 
             $table->increments('id');
+            $table->string('name')->nullable();
             $table->string('description')->nullable();
             $table->string('address',500)->nullable();
             $table->string('city',100)->nullable();

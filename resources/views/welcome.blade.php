@@ -58,7 +58,7 @@
     <body>
         <div class="container">
             <div class="content">
-<<<<<<< HEAD
+
                 <div class="title" 
                      style="color: gray";>
                  
@@ -91,10 +91,7 @@
       
     </div>
         
-=======
-                <div class="title">Welcome!</div>
-            </div>
+              
         </div>
->>>>>>> origin/master
     </body>
 </html>

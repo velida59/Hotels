@@ -61,70 +61,19 @@
     </head>
     <body>
     
-       
-        
-        <div class="container">
-        <div class="content">
-            
-  <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-  </div>
-  </div>
     <div class="title" 
-         style="color: black";> Choose your place to stay and live the great experience!
-                </div>
-       <div>
+          style="color: black"> Choose your place to stay and live the great experience!
+     </div
+     <br><br>
        <div class="btn-lg">
-	<button 
-         type="button" 
-         style="background-color:#FFDEAD;
+            @foreach($facilities as $facility)
+          <a href="facility/{{$facility->id}}" type="submit"
+             style="background-color:#FFDEAD;
                 color:#FFDEAD; 
                 padding:10px;
                 border-radius: 10px;
-                border: 3px solid #CD853F"
-                
-                >
-            
-		<li><a href="{{ url('/home') }}">HOTEL PING</a></li>
-	</button>
-    </div>
-        
-        
-        <div class="btn-lg">
-	<button 
-         type="button" 
-         style="background-color:#FFDEAD; 
-                color:#FFDEAD; 
-                padding:10px;
-                border-radius: 10px;
-                border: 3px solid #CD853F">
-		<li><a href="{{ url('/home') }}">HOTEL SARAJEVO</a></li>
-	</button>
-    </div> 
-    
-    <div class="btn-lg">
-	<button 
-         type="button" 
-         style="background-color:#FFDEAD; 
-                color:#FFDEAD; 
-                padding:10px;
-                border-radius: 10px;
-                border: 3px solid #CD853F">
-		<li><a href="{{ url('/home') }}">HOTEL BOSNA</a></li>
-	</button>
-    </div>
-                
-    <div class="btn-lg">
-	<button 
-         type="button" 
-         style="background-color:#FFDEAD; 
-                color:#FFDEAD; 
-                padding:10px;
-                border-radius: 10px;
-                border: 3px solid #CD853F"
-                >
-		<li><a href="{{ url('/home') }}">HOTEL IUS</a></li>
-	</button>
-    </div>            
+               border: 3px solid #CD853F">{{$facility->name}}</a>
+           @endforeach
+      </div>    
     </body>
 </html>

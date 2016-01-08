@@ -26,7 +26,6 @@ class AuthController extends Controller
 private $redirectTo = '/';
 
 
-    private $redirectTo = '/';
 
     /**
      * Create a new authentication controller instance.
